@@ -7,7 +7,7 @@ import csv
 df = pd.read_csv("data.csv")
 
 # HEIGHT-
-height = df["Height(Inches)"].tolist()
+height = df["Avg Rating"].tolist()
 fig = ff.create_distplot([height], ["height"], show_hist= False )
 fig.show()
 
