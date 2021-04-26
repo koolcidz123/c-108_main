@@ -6,14 +6,11 @@ import csv
 
 df = pd.read_csv("data.csv")
 
-# HEIGHT-
-height = df["Avg Rating"].tolist()
-fig = ff.create_distplot([height], ["height"], show_hist= False )
+# Average Rating-
+averageRating = df["Avg Rating"].tolist()
+fig = ff.create_distplot([averageRating], ["Average-Rating"], show_hist= True )
 fig.show()
 
-# WEIGHT -
-weight = df["Weight(Pounds)"].tolist()
-fig1 = ff.create_distplot([weight], ["weight"], show_hist= False)
-fig1.show()
-# print(df)
+
+
 
